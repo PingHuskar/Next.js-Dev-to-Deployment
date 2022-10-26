@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Header from './Header'
 import styles from '../styles/Layout.module.css'
+import Footer from './Footer'
 
 export default function Layout({title,keywords,description,children}) {
   return (
@@ -14,6 +15,7 @@ export default function Layout({title,keywords,description,children}) {
         <div className={styles.Container}>
             {children}
         </div>
+        <Footer />
     </div>
   )
 }
